@@ -29,4 +29,8 @@ public class ProductItem {
     private Product product;
     @Transient
     private String productName;
+
+    public double getAmount(){
+        return this.price*this.quantity;
+    }
 }
